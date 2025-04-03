@@ -8,10 +8,14 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "duckdb" },
+    { name = "tabulate" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "duckdb", specifier = ">=1.2.1" }]
+requires-dist = [
+    { name = "duckdb", specifier = ">=1.2.1" },
+    { name = "tabulate", specifier = ">=0.9.0" },
+]
 
 [[package]]
 name = "duckdb"
@@ -59,4 +63,13 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/63/ac/74c3fe0bfb0efa144e4e30909d1fefde86fbe6250148a5c596725e8be26b/duckdb-1.2.1-cp39-cp39-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:a874d242f489bf649e6f03f3132d8d278371a8baf0ce55b48200af0de70d8f1f", size = 18719722 },
     { url = "https://files.pythonhosted.org/packages/8e/e5/4a63024c3bff1e8ee9d0e91cbdb779f593bb2a0cd12d3bf9e6b3327ae8b4/duckdb-1.2.1-cp39-cp39-musllinux_1_2_x86_64.whl", hash = "sha256:55c9b4214dd80e6adf73c7224529e0df290426d9fe5b6568dcd004916e690b84", size = 22237298 },
     { url = "https://files.pythonhosted.org/packages/41/f5/fc2aa7c1dfd28a009e58f52c0e3923f88a9314b3552d15aad7948468e917/duckdb-1.2.1-cp39-cp39-win_amd64.whl", hash = "sha256:6043d37e289df828fada6245381c3d1b67b71e0245f1b599b6c4c2634318aed2", size = 11398738 },
+]
+
+[[package]]
+name = "tabulate"
+version = "0.9.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ec/fe/802052aecb21e3797b8f7902564ab6ea0d60ff8ca23952079064155d1ae1/tabulate-0.9.0.tar.gz", hash = "sha256:0095b12bf5966de529c0feb1fa08671671b3368eec77d7ef7ab114be2c068b3c", size = 81090 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/40/44/4a5f08c96eb108af5cb50b41f76142f0afa346dfa99d5296fe7202a11854/tabulate-0.9.0-py3-none-any.whl", hash = "sha256:024ca478df22e9340661486f85298cff5f6dcdba14f3813e8830015b9ed1948f", size = 35252 },
 ]
